@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cab Driver Matching System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🚕 Cab Driver Matching System</h1>
+    <p>ADSA Project - Nearest Driver Matching</p>
+</header>
+
+
+<main class="container">
+
+    <!-- Passenger Section -->
+
+    <section class="card">
+
+        <h2>📍 Passenger Location</h2>
+
+        <div class="location">
+
+            <input
+                type="number"
+                id="passengerX"
+                placeholder="X Coordinate"
+            >
+
+            <input
+                type="number"
+                id="passengerY"
+                placeholder="Y Coordinate"
+            >
+
+        </div>
+
+        <button onclick="findDrivers()">
+            Find Nearby Drivers
+        </button>
+
+    </section>
+
+
+    <!-- Driver Section -->
+
+    <section class="card">
+
+        <h2>🚕 Add Driver</h2>
+
+        <div class="form">
+
+            <input
+                type="text"
+                id="driverName"
+                placeholder="Driver Name"
+            >
+
+            <input
+                type="text"
+                id="cabNumber"
+                placeholder="Cab Number"
+            >
+
+            <input
+                type="number"
+                id="driverX"
+                placeholder="X Coordinate"
+            >
+
+            <input
+                type="number"
+                id="driverY"
+                placeholder="Y Coordinate"
+            >
+
+            <button onclick="addDriver()">
+                Add Driver
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Matching Result -->
+
+    <section class="card result">
+
+        <h2>🎯 Matching Result</h2>
+
+        <div id="matchResult">
+            Enter passenger location and
+            search for drivers.
+        </div>
+
+    </section>
+
+
+    <!-- Driver List -->
+
+    <section class="card">
+
+        <h2>📋 Available Drivers</h2>
+
+        <div id="driverList"></div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        Cab Driver Matching System |
+        Data Structures & Algorithms
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

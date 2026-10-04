@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #667eea,
+            #764ba2
+        );
+}
+
+
+/* Header */
+
+header {
+
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+header h1 {
+
+    margin-bottom: 10px;
+
+    font-size: 32px;
+}
+
+
+header p {
+
+    color: #ddd;
+}
+
+
+/* Container */
+
+.container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 30px auto;
+}
+
+
+/* Card */
+
+.card {
+
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.2);
+}
+
+
+.card h2 {
+
+    color: #333;
+
+    margin-bottom: 20px;
+}
+
+
+/* Input */
+
+.location,
+.form {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(180px, 1fr)
+        );
+
+    gap: 10px;
+}
+
+
+input {
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+input:focus {
+
+    border-color: #667eea;
+}
+
+
+/* Button */
+
+button {
+
+    padding: 13px 20px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #667eea;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    background: #4f5ed1;
+}
+
+
+/* Match result */
+
+.result {
+
+    text-align: center;
+}
+
+
+#matchResult {
+
+    background: #f2f3ff;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+}
+
+
+/* Driver list */
+
+#driverList {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(250px, 1fr)
+        );
+
+    gap: 15px;
+}
+
+
+.driver {
+
+    background: #f5f6ff;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    border-left: 5px solid #667eea;
+
+    transition: 0.3s;
+}
+
+
+.driver:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 5px 15px
+        rgba(0,0,0,0.15);
+}
+
+
+.driver h3 {
+
+    margin-bottom: 10px;
+
+    color: #333;
+}
+
+
+.driver p {
+
+    margin: 7px 0;
+
+    color: #555;
+}
+
+
+.available {
+
+    color: green !important;
+
+    font-weight: bold;
+}
+
+
+.busy {
+
+    color: red !important;
+
+    font-weight: bold;
+}
+
+
+.match {
+
+    border: 3px solid #27ae60;
+
+    background: #eafaf1;
+}
+
+
+/* Footer */
+
+footer {
+
+    text-align: center;
+
+    color: white;
+
+    padding: 25px;
+}
+
+
+/* Mobile */
+
+@media(max-width:600px) {
+
+    header h1 {
+
+        font-size: 25px;
+    }
+
+    .container {
+
+        width: 95%;
+    }
+
+}
